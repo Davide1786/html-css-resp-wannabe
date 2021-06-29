@@ -83,7 +83,6 @@ img {
 
   h1, h3, div {
     letter-spacing: 1px;
-    /* word-spacing: 1px;  */
   }
 
 /* BLOCCO LEZIONI */
@@ -104,7 +103,7 @@ img {
     margin-top: 0px;
   }
   
-  img {
+  #div img {
     width: 35%;
     height: 10%;
   }
@@ -140,8 +139,33 @@ img {
     margin-bottom: 20px;
     background-color: white;
 }
-/* BLOCCO STEPS */
 
-  
+.container.grey {
+  background-color: white;
 }
+
+#steps .row h3 {
+  margin: 0px;
+}
+
+  /* BLOCCO STEPS */
+  
+  /* BLOCCO WHY */
+
+#why .row h3 {
+    margin: 0px;
+}
+  
+#why {
+    background-color: rgb(255, 247, 179);
+}  
+
+#why .row>.first, #why .row>.second, #why .row>.third {
+  margin-top: 0px;
+} 
+
+
+  /* BLOCCO WHY */
+  
+
 /* fine media */
