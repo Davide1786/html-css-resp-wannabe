@@ -1,0 +1,147 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* media */
+
+@media (max-width: 420px) { 
+
+  body {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  h1, h3, div {
+    letter-spacing: 1px;
+    /* word-spacing: 1px;  */
+  }
+
+/* BLOCCO LEZIONI */
+
+  #lezioni {
+    background-color: rgb(255, 247, 179);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 0px;
+  }
+  
+  img {
+    width: 35%;
+    height: 10%;
+  }
+
+  div#lezioni > .row {
+    padding: 0 5px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    justify-content: center;
+    display: inline-block;
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  #lezioni .row h3 {
+    margin: 0px;
+  }
+
+/* BLOCCO LEZIONI */
+
+/* BLOCCO STEPS */
+
+  /* .row {background-color: aqua;} */
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    justify-content: center;
+    display: inline-block;
+    width: 100%; 
+    margin-bottom: 20px;
+    background-color: white;
+}
+/* BLOCCO STEPS */
+
+  
+}
+/* fine media */
